@@ -23,3 +23,6 @@ After implementing your library,
 git add -A
 npm run commit
 ```
+
+### Reference
+https://egghead.io/lessons/javascript-introduction-to-how-to-write-an-open-source-javascript-library
