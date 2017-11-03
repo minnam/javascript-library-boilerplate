@@ -7,7 +7,7 @@ export default {
   output: {
     path: join(__dirname, 'dist'),
     libraryTarget: 'umd',
-    library: 'mark2',
+    library: '#name',
   },
   devtool: 'source-map',
   module: {
