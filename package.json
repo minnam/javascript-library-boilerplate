@@ -9,8 +9,8 @@
   "scripts": {
     "build": "npm-run-all --parallel build:*",
     "build:main": "babel --copy-files --out-dir dist --ignore *.spec.js src",
-    "build:umd": "webpack --output-filename mark2.js",
-    "build:umd.min": "webpack --output-filename mark2.min.js -p",
+    "build:umd": "webpack --output-filename #name.js",
+    "build:umd.min": "webpack --output-filename #name.min.js -p",
     "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "commit": "git-cz",
     "cover": "nyc npm t",
@@ -42,8 +42,7 @@
     "babel-cli": "latest",
     "babel-eslint": "latest",
     "babel-loader": "latest",
-    "babel-preset-es2015": "latest",
-    "babel-preset-stage-2": "latest",
+    "babel-preset-env": "latest",
     "chai": "latest",
     "codecov.io": "latest",
     "commitizen": "latest",
@@ -54,7 +53,7 @@
     "eslint-plugin-import": "latest",
     "eslint-plugin-jsx-a11y": "latest",
     "eslint-plugin-react": "latest",
-    "ghooks": "latest",
+    "husky": "latest",
     "istanbul": "latest",
     "jsdom": "latest",
     "json-loader": "latest",
@@ -77,8 +76,7 @@
   },
   "babel": {
     "presets": [
-      "es2015",
-      "stage-2"
+      "env"
     ]
   }
 }
